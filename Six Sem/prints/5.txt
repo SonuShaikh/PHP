@@ -1,0 +1,23 @@
+setCookie.php
+<?php
+  // set Cookie
+  setCookie('Name','Sonu',time()+100);
+?>
+viewCookie.php
+<?php
+   
+  if(isset($_COOKIE['Name']) AND !empty($_COOKIE['Name'])){
+	  echo 'Welcome '.$_COOKIE['Name'];
+  }else{
+	  echo 'Your Cookie Has been Expiered';
+  }
+?>
+unsetCookie.php
+<?php
+  // Unset Session
+  setCookie('Name','Sonu',time()-10);
+?>
+
+
+output:
+Welcome Sonu

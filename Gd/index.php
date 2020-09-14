@@ -1,0 +1,1 @@
+<img src="Generator.php?source=dog.png"/>

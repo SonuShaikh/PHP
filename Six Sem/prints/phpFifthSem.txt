@@ -1,0 +1,18 @@
+1. Write program in PHP to find out even numbers between 1 to 100
+2. Write program in PHP to find out the factorial of first 10 number
+3. Write program in PHP To display table from 2 to 10
+4. Write program in PHP to perform the arithmatic operation on the basic of switch
+5. Write program in PHP to Demonstrate numerical array  by sorting
+6. Write program in PHP to Demonstrate asseccetive Array
+7. Write program in PHP to Demonstrate Multidimention Array
+8. Write program in PHP to Demonstrate Call By Value Function
+9. Write program in PHP to Demonstrate function returning value
+10. Write program in PHP to find out the factorial of number by using recursion
+11. Write program in PHP to Demonstrate Date/Time Function.
+12. Write program in PHP to Demonstrate String function in php
+13. Write program in PHP to Demonstarte Opps Concept in php
+    I.  Class
+    II. Object
+    III.Variable(Property)
+    IV. Constructor
+    V. Inheristance

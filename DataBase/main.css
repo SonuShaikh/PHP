@@ -1,0 +1,15 @@
+.personinfo label{
+	float : left;
+	width : 100;
+	
+}
+
+fieldset{
+	
+	background-color:Yellow;
+	border-left-style:Solid;
+	width : 300;
+}
+body{
+	background-color:White;
+}

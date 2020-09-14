@@ -1,0 +1,25 @@
+<?php
+   include '6_DatabaseConnection.php';
+     if(isset($_POST['lbtn'])){
+		 $name = $_POST['uname'];
+		 $pass = $_POST['upass'];
+		 $query = "SELECT * FROM `loning` WHERE `username`='".$name."' AND `password`='".$pass."'";
+		 if($query_result = mysql_query($query)){
+			 $num_rows = mysql_num_rows($query_result);
+			 if($num_rows == 0){
+				 echo 'Wrong username/password combination';
+			 }else{
+				 $fetch = mysql_fetch_assoc($query_result);
+			 echo 'Login Succefull As '.$fetch['username'].' With password as '.$fetch['password'];
+			 }
+		 }else{
+			 echo mysql_error();
+		 }
+	 }
+
+?>
+<form action='login.php' method='post'>
+     Username <input type= "text" name="uname" Required/>
+     password <input type= "password" name="upass" Required/>
+	 <input type="Submit" value="Login" name="lbtn"/>
+</form>

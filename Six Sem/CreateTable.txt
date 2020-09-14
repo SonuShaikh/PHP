@@ -1,0 +1,62 @@
+CREATE DATABASE `demo`
+CREATE TABLE `employee`
+(
+    emp_id INT PRIMARY KEY AUTO_INCREMENT,
+    emp_name VARCHAR(30),
+    emp_salary DECIMAL(10,2),
+    emp_des    VARCHAR(30),
+    emp_dept_id INT
+ );
+
+ // INSERT RECORD IN `employee` TABLE
+ INSERT INTO `employee` ( `emp_name`, `emp_salary`, `emp_des`, `emp_dept_id`) VALUES ('Sonu',50000,'Programmer',10);
+ INSERT INTO `employee` ( `emp_name`, `emp_salary`, `emp_des`, `emp_dept_id`) VALUES ('Sahil',80000,'DBA',20);
+ INSERT INTO `employee` ( `emp_name`, `emp_salary`, `emp_des`, `emp_dept_id`) VALUES ('Alex',30000,'Tester',30);
+ INSERT INTO `employee` ( `emp_name`, `emp_salary`, `emp_des`, `emp_dept_id`) VALUES ('Admin',100000,'Manager',40);
+ 
+  CREATE TABLE department
+(
+    dept_id	 INT,
+    dept_name VARCHAR(20)
+    );
+// INSERT RECORD IN `department` TABLE
+	INSERT INTO department VALUES(10,'Programming')
+	INSERT INTO department VALUES(20,'Database')
+	INSERT INTO department VALUES(30,'Testing')
+	INSERT INTO department VALUES(40,'Management')
+ 
+ // USE OF LIMIT CLAUSE
+ // Select Only First Two Record
+ SELECT * FROM employee limit 2;
+ emp_id     emp_name   emp_salary     emp_des    emp_dept_id 
+    1       sonu	   50000          Programmer  10
+	2		Sahil	   80000          DBA         20
+	
+	
+//select Two Record From 3rd Row
+ SELECT * FROM employee LIMIT 2,2
+ emp_id     emp_name   emp_salary     emp_des    emp_dept_id 
+    3       Alex	   30000          Tester       30
+	4		Admin	   100000         Manager      40
+
+// Order By Cause
+SELECT * FROM employee ORDER BY emp_id DESC
+emp_id     emp_name   emp_salary     emp_des    emp_dept_id 
+    4		Admin	   100000         Manager      40
+	3       Alex	   30000          Tester       30
+	2		Sahil	   80000          DBA          20
+    1       sonu	   50000          Programmer   10
+	
+// Query multiple tables at once
+SELECT emp_id, emp_name, emp_salary , emp_des, dept_name, dept_id FROM employee e , department d WHERE emp_dept_id = dept_id;
+
+emp_id     emp_name   emp_salary     emp_des    dept_id   dept_name 
+    4		Admin	   100000         Manager      40     Management
+	3       Alex	   30000          Tester       30     Testing
+	2		Sahil	   80000          DBA          20     Database
+    1       sonu	   50000          Programmer   10     Programming
+	
+//
+
+ 
+ 

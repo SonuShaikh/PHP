@@ -1,0 +1,9 @@
+you should have to know what is include and require , and header  function
+coocki and session quite similar they store information about ther user that currently visition your web site
+we store piece of ifnormation it might not be about them it relative to theme.
+- session are stored on server on they hidden from user
+- sessioin are more secure than coockies we can use in shoppin 
+- session is lot easiar to use in programm
+- to user sessioin first we have to start it by using session_start() function
+- how this is usefull
+  a.Most popular exaple suppose user was logged in and you still want them to logged

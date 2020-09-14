@@ -1,0 +1,12 @@
+body{
+	background-attachment:fixed;
+	background-image:url(dog.png);
+}
+fieldset {
+	border:solid;
+	width: 300px;
+	background-color:yellow;
+	background-position:center;
+	
+}
+
